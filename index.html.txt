@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Solace Massage Therapy | San Leandro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lang">
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('cn')">中文</button>
+</div>
+
+<h1 id="title">Solace Massage Therapy</h1>
+<p id="desc">Professional deep massage in San Leandro</p>
+
+<h2 id="serviceTitle">Service</h2>
+<p id="serviceText">Deep Massage – 60 Minutes – $60</p>
+
+<p class="info">
+📞 <a href="tel:15104322501">510-432-2501</a><br>
+📍 1575 E 14th St, San Leandro, CA 94577
+</p>
+
+<a href="booking.html" class="btn" id="bookBtn">Book Now</a>
+
+<div class="map">
+<iframe
+  src="https://www.google.com/maps?q=1575%20E%2014th%20St,%20San%20Leandro,%20CA%2094577&output=embed"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+</div>
+
+<script>
+function setLang(lang){
+  if(lang==='cn'){
+    title.innerText="Solace 按摩理疗";
+    desc.innerText="位于 San Leandro 的专业深层按摩服务";
+    serviceTitle.innerText="服务项目";
+    serviceText.innerText="深层按摩 60 分钟 $60";
+    bookBtn.innerText="立即预约";
+  }else{
+    title.innerText="Solace Massage Therapy";
+    desc.innerText="Professional deep massage in San Leandro";
+    serviceTitle.innerText="Service";
+    serviceText.innerText="Deep Massage – 60 Minutes – $60";
+    bookBtn.innerText="Book Now";
+  }
+}
+</script>
+
+</body>
+</html>
